@@ -1,0 +1,52 @@
+/*fonts
+font-family: 'Roboto ', sans-serif;
+font-family: 'Playfair', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*reset bootstrapp*/
+html,
+body {
+  
+    font-family: 'Roboto', sans-serif;
+ }
+
+ header{
+     background-color: #F2F2F2;
+    h1{
+        font-size: 5em;
+        font-family: 'Playfair Display', serif;
+        z-index: 1;
+
+        span{
+            color: #016481;
+            font-weight: bolder;
+        }
+
+       
+    }
+
+    p{
+        font-size: 1.56em;
+    }
+
+    .btn{
+        border-radius: 2rem;
+        padding: 0.5em 5em;
+        background-color: #016481 !important;
+    }
+     
+ }
+
+ /*components*/
+
+ .dot {
+    height: 12em;
+    width: 12em;
+    background-color: #36D9C8;
+    opacity: 0.3;
+    border-radius: 50%;
+    z-index: 0;
+    
+  }
