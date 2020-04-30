@@ -5,6 +5,9 @@ font-family: 'Playfair', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 /*color pages*/
+/*
+    Break Points
+*/
 /*reset bootstrapp*/
 html,
 body {
@@ -12,7 +15,8 @@ body {
 }
 
 header {
-  background-color: #F2F2F2;
+  background-color: #016481;
+  color: white;
 }
 
 header h1 {
@@ -22,12 +26,17 @@ header h1 {
 }
 
 header h1 span {
-  color: #016481;
   font-weight: bolder;
 }
 
 header p {
   font-size: 1.56em;
+}
+
+@media (max-width: 576px) {
+  header p {
+    font-size: 1.3em;
+  }
 }
 
 header .btn {
@@ -74,7 +83,36 @@ header .header-wave .wave {
 
 /*works section*/
 .works-section h2 {
+  font-size: 2.5em;
   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .works-section .card-deck {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+.works-section .card-deck .card {
+  background-color: #016481;
+  border: none !important;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .works-section .card-deck .card {
+    width: 90vw;
+    height: 15em;
+  }
+}
+
+.works-section .card-deck .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
 }
 
 /*components*/
@@ -82,10 +120,17 @@ header .header-wave .wave {
   height: 13em;
   width: 13em;
   left: -23px;
-  background-color: #36D9C8;
-  opacity: 0.3;
+  border: 7px solid;
+  border-color: #36D9C8;
+  opacity: 0.4;
   border-radius: 50%;
   z-index: 0;
+}
+
+@media (max-width: 576px) {
+  .dot {
+    left: 35px;
+  }
 }
 
 .section-title::before {

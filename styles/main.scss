@@ -15,14 +15,15 @@ body {
  }
 
  header{
-     background-color: #F2F2F2;
+     background-color: $blue-primary;
+     color: white;
     h1{
         font-size: 5em;
         font-family: 'Playfair Display', serif;
         z-index: 1;
 
         span{
-            color: $blue-primary;
+            
             font-weight: bolder;
         }
 
@@ -31,6 +32,9 @@ body {
 
     p{
         font-size: 1.56em;
+        @media(max-width: $break-small){
+            font-size: 1.3em;
+        }
     }
 
     .btn{
@@ -86,8 +90,34 @@ body {
  .works-section{
 
     h2{
+        font-size: 2.5em;
         font-weight: bold;
     }
+
+    .card-deck{
+        @media (max-width: $break-small){
+            flex-direction: row !important;
+        }
+
+        .card{
+            background-color: $blue-primary;
+            border: none !important;
+            
+            overflow: hidden;
+            @media (max-width: $break-small) {
+                width: 90vw;
+                height: 15em;
+            }
+            img{
+                object-fit: cover;
+                opacity: 0.6;
+                @media ( max-width: $break-small) {
+                    
+                }
+            }
+        }
+    }
+    
  }
 
  /*components*/
@@ -96,10 +126,14 @@ body {
     height: 13em;
     width: 13em;
     left: -23px;
-    background-color: $celestial;
-    opacity: 0.3;
+    border: 7px solid;
+    border-color: $celestial;
+    opacity: 0.4;
     border-radius: 50%;
     z-index: 0;
+    @media (max-width: $break-small){
+        left: 35px;
+    }
     
   }
 
