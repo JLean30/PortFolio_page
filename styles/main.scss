@@ -104,6 +104,7 @@ body {
             border: none !important;
             overflow: hidden;
             z-index: 0;
+     
             @media (max-width: $break-small) {
                 width: 90vw;
                 height: 15em;
@@ -111,7 +112,8 @@ body {
 
             
             img{
-                object-fit: cover;
+                object-fit: scale-down;
+                height: 492px !important;
                 &:hover{
                     opacity: 0.5;
                     transition: all 0.4s linear;
@@ -150,6 +152,17 @@ body {
      h2{
          font-size: 3.5em;
      }
+
+     h3{
+         color: $celestial;
+     }
+     .aboutme-image{
+         img{
+             position: relative;
+             z-index: 1;
+         }
+     }
+     
  }
  /*components*/
 
@@ -167,6 +180,18 @@ body {
     
   }
   
+  .rect{
+    background-color: $orange;
+    width: 19vw;
+    top: -14px;
+    right: -7px;
+    height: 54vh;
+    z-index: 0;
+
+}
+.rect--aboutme{
+    background-color: $celestial;
+}
 
   .section-title{
 
@@ -174,13 +199,19 @@ body {
         content: "";
         display: block;
         width: 2em;
-        background-color: #016481;
+        background-color: $blue-primary;
         height: 4px;
         border-radius: .5rem;
         margin: 0 auto .4em;
     }
     
   }
+  .section-title--orange{
+      &::before{
+          background-color: $orange;
+      }
+  }
+
 
   /*animateions */
 
