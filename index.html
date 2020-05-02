@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
   <link rel="stylesheet" href="./styles/main.css" />
   <title>Jean Brenes - Portfolio</title>
 </head>
 
 <body>
   <header>
+    
     <nav class="navbar navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,30 +35,30 @@
       </div>
     </nav>
     <section class="container-fluid">
-      <div class="row flex-nowrap mt-5 pb-5">
-        <div class="col-12 col-md-6 justify-content-md-start offset-md-1 ">
+      <div class="row flex-wrap  mt-5 pb-5">
+        <div class=" order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1 ">
           <div class="portfolio-name ">
             <div>
-              <div class="position-absolute dot"></div>
-              <h1 class="position-relative text-md-left text-center wow fadeIn">
+              <div class="d-sm-none position-absolute dot"></div>
+              <h1 class="position-relative text-left p-3 p-md-0 mt-3 wow fadeIn">
                 Hello! <br />
                 I'm <span>Jean</span>
               </h1>
             </div>
 
-            <p class="col-12 col-md-8 col-lg-6 p-sm-4 p-md-0 mt-5 text-left ">
-              Hi! I'm Jean Brenes. I develop interactive websites and apps that
+            <p class="col-12 col-md-8 col-lg-6 p-sm-3 p-md-0 mt-2 mt-md-5 text-left ">
+              I develop interactive websites and apps that
               run across plataforms & devices.
             </p>
-
-            <a href="#"><button class="mt-4 btn btn-primary ">Download CV</button></a>
+            <div class="text-center text-md-left">
+              <a href="#"><button class="mt-4 btn btn-primary ">Download CV</button></a>
+            </div>
+            
           </div>
         </div>
-        <div class="d-sm-none d-md-flex col-4 mx-auto">
-          <div class="portfolio-image">
-
-            <img src="./assets/profile.png" class="img-fluid">
-            <div class="position-absolute rect"></div>
+        <div class="order-1 order-md-2 col-10 col-md-4 mx-auto">
+          <div>
+            <img src="./assets/profile.png" class="img-fluid box-orange">
           </div>
         </div>
       </div>
@@ -72,26 +73,26 @@
       they’re online.</p>
 
     <div class="container-fluid cards-section mt-4 mx-auto">
-      <div class="card-deck flex-wrap  ">
-        <div class="col card-works  text-center p-0">
-          <div class="card wow fadeIn" data-wow-duration="1s">
-            <img class="card-img" src="./assets/barberia 1.png" alt="barberia clandestina project">
+      <div class="card-deck flex-wrap justify-content-center ">
+        <div class="col card-works  text-center">
+          <div class="card wow fadeIn hvr-grow" data-wow-duration="1s">
+            <img class="card-img-top" src="./assets/barberia 1.png" alt="barberia clandestina project">
             <div class="card-body">
               <h5 class="card-title">Barberia Clandestina</h5>
             </div>
           </div>
         </div>
-        <div class="col card-works p-0">
-          <div class="card wow fadeIn" data-wow-duration="1s">
-            <img class="card-img" src="./assets/itm.png" alt="barberia clandestina project">
+        <div class="col card-works ">
+          <div class="card wow fadeIn hvr-grow" data-wow-duration="1s">
+            <img class="card-img-top" src="./assets/itm.png" alt="barberia clandestina project">
             <div class="card-body">
               <h5 class="card-title">ITM website</h5>
             </div>
           </div>
         </div>
-        <div class="col card-works p-0">
-          <div class="card wow fadeIn" data-wow-duration="1s">
-            <img class="card-img" src="./assets/gusticos.png" alt="barberia clandestina project">
+        <div class="col card-works">
+          <div class="card wow fadeIn hvr-grow" data-wow-duration="1s">
+            <img class="card-img-top" src="./assets/gusticos.png" alt="barberia clandestina project">
             <div class="card-body">
               <h5 class="card-title">Gusticos Lomel Restaurant</h5>
             </div>
@@ -139,16 +140,16 @@
     </div>
   </section>
   <section class="container-fluid aboutme-section py-5">
-    <div class="row flex-nowrap mt-5 pb-5">
-      <div class="col-12 col-md-6 justify-content-md-start offset-md-1 ">
+    <div class="row flex-wrap mt-5 pb-5">
+      <div class="order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1 ">
         <div class="portfolio-name "></div>
           <div>
-            <h2 class="text-md-left text-center wow fadeIn">
+            <h2 class="text-md-left text-center mt-4 wow fadeIn">
               About Me
             </h2>
           </div>
 
-          <p class="col-12 col-md-8 col-lg-6 p-sm-4 p-md-0 mt-5 text-left ">
+          <p class="col-12 col-md-8 col-lg-8 p-sm-4 p-md-0 mt-md-5 text-left ">
             At the moment I'm studying Informatica y Tecnología multimedia at the Universidad de Costa Rica. I’ve been dedicating my time to cybersecurity so I can improve the way I secure my websites and apps. I participated at the program of the OAS Creating A Professional Career In Digital Security in 2019.
           </p>
 
@@ -158,10 +159,10 @@
 
         </div>
    
-      <div class="d-sm-none d-md-flex col-4 mx-auto">
+      <div class="order-1 order-md-2 col-10 col-md-4 mx-auto">
         <div class="aboutme-image">
-          <img src="./assets/profile.png" class="img-fluid">
-          <div class="position-absolute rect rect--aboutme"></div>
+          <img src="./assets/profile.png" class="img-fluid box-celestial">
+         
         </div>
       </div>
     </div>
@@ -173,6 +174,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
   <script>
+    
     new WOW().init();
   </script>
 </body>

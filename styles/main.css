@@ -46,20 +46,6 @@ header .btn {
   border-color: unset !important;
 }
 
-header .portfolio-image img {
-  z-index: 1;
-  position: relative;
-}
-
-header .portfolio-image .rect {
-  background-color: #FD8052;
-  width: 19vw;
-  top: -14px;
-  right: -7px;
-  height: 54vh;
-  z-index: 0;
-}
-
 header .header-wave {
   margin: 0;
   padding: 0;
@@ -98,27 +84,25 @@ header .header-wave .wave {
 
 .works-section .card-deck .card {
   border: none !important;
-  overflow: hidden;
-  z-index: 0;
 }
 
 @media (max-width: 576px) {
   .works-section .card-deck .card {
     width: 90vw;
-    height: 15em;
+    height: 50vh;
   }
 }
 
-.works-section .card-deck .card img {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  height: 492px !important;
+.works-section .card-deck .card .card-img-top {
+  height: 71vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.works-section .card-deck .card img:hover {
-  opacity: 0.5;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+@media (max-width: 576px) {
+  .works-section .card-deck .card .card-img-top {
+    height: 39vh;
+  }
 }
 
 /*Skills section*/
@@ -168,21 +152,35 @@ header .header-wave .wave {
 
 @media (max-width: 576px) {
   .dot {
-    left: 35px;
+    display: none;
   }
 }
 
-.rect {
-  background-color: #FD8052;
-  width: 19vw;
-  top: -14px;
-  right: -7px;
-  height: 54vh;
-  z-index: 0;
+/*
+  .rect{
+    background-color: $orange;
+    width: 19vw;
+    top: -14px;
+    right: -7px;
+    height: 54vh;
+    z-index: 0;
+    @media(max-width: $break-small){
+      
+            width: 51vw;
+            right: 1px;
+            height: 47vh;
+  
+    }
+
+}*/
+.box-orange {
+  -webkit-box-shadow: 20px -14px 0px 0px #FD8052;
+          box-shadow: 20px -14px 0px 0px #FD8052;
 }
 
-.rect--aboutme {
-  background-color: #36D9C8;
+.box-celestial {
+  -webkit-box-shadow: -20px -14px 0px 0px #36D9C8;
+          box-shadow: -20px -14px 0px 0px #36D9C8;
 }
 
 .section-title::before {
@@ -214,6 +212,19 @@ header .header-wave .wave {
   }
   100% {
     background-position-x: 1000px;
+  }
+}
+
+.lines {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  svg {
+    height: 900px;
   }
 }
 /*# sourceMappingURL=main.css.map */
