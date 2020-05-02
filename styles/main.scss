@@ -15,15 +15,14 @@ body {
  }
 
  header{
-     background-color: $blue-primary;
-     color: white;
+     background-color: $gray-brackground;
     h1{
         font-size: 5em;
         font-family: 'Playfair Display', serif;
         z-index: 1;
 
         span{
-            
+            color: $blue-primary;
             font-weight: bolder;
         }
 
@@ -99,18 +98,26 @@ body {
             flex-direction: row !important;
         }
 
+        
         .card{
-            background-color: $blue-primary;
-            border: none !important;
             
+            border: none !important;
             overflow: hidden;
+            z-index: 0;
             @media (max-width: $break-small) {
                 width: 90vw;
                 height: 15em;
             }
+
+            
             img{
                 object-fit: cover;
-                opacity: 0.6;
+                &:hover{
+                    opacity: 0.5;
+                    transition: all 0.4s linear;
+                    //animation: fadeOut 0.5s linear 1 ;
+                    
+                }
                 @media ( max-width: $break-small) {
                     
                 }
@@ -120,14 +127,37 @@ body {
     
  }
 
+ /*Skills section*/
+ 
+ .skills-section{
+     background-color: $gray-section;
+    
+
+     .skills-item {
+         margin-bottom: 1em;
+        img{
+            height: 103px;
+            object-fit: scale-down;
+        }
+       
+    }
+ }
+
+ /*About me Section*/
+ .aboutme-section{
+    color: white;
+     background-color: $dark-background;
+     h2{
+         font-size: 3.5em;
+     }
+ }
  /*components*/
 
  .dot {
     height: 13em;
     width: 13em;
     left: -23px;
-    border: 7px solid;
-    border-color: $celestial;
+    background-color: $celestial;
     opacity: 0.4;
     border-radius: 50%;
     z-index: 0;
@@ -136,6 +166,7 @@ body {
     }
     
   }
+  
 
   .section-title{
 

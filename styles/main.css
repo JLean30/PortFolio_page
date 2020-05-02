@@ -15,8 +15,7 @@ body {
 }
 
 header {
-  background-color: #016481;
-  color: white;
+  background-color: #F2F2F2;
 }
 
 header h1 {
@@ -26,6 +25,7 @@ header h1 {
 }
 
 header h1 span {
+  color: #016481;
   font-weight: bolder;
 }
 
@@ -97,9 +97,9 @@ header .header-wave .wave {
 }
 
 .works-section .card-deck .card {
-  background-color: #016481;
   border: none !important;
   overflow: hidden;
+  z-index: 0;
 }
 
 @media (max-width: 576px) {
@@ -112,7 +112,37 @@ header .header-wave .wave {
 .works-section .card-deck .card img {
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.6;
+}
+
+.works-section .card-deck .card img:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/*Skills section*/
+.skills-section {
+  background-color: #F5F5F5;
+}
+
+.skills-section .skills-item {
+  margin-bottom: 1em;
+}
+
+.skills-section .skills-item img {
+  height: 103px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+/*About me Section*/
+.aboutme-section {
+  color: white;
+  background-color: #423E3F;
+}
+
+.aboutme-section h2 {
+  font-size: 3.5em;
 }
 
 /*components*/
@@ -120,8 +150,7 @@ header .header-wave .wave {
   height: 13em;
   width: 13em;
   left: -23px;
-  border: 7px solid;
-  border-color: #36D9C8;
+  background-color: #36D9C8;
   opacity: 0.4;
   border-radius: 50%;
   z-index: 0;
