@@ -109,6 +109,12 @@ body {
 
      .skills-item {
          margin-bottom: 1em;
+         button{
+             width: inherit;
+             background: unset !important;
+             border: 0;
+             padding: 0;
+         }
         img{
             height: 103px;
             object-fit: scale-down;
@@ -132,8 +138,15 @@ body {
          img{
              position: relative;
              z-index: 1;
+             width: 30em;
          }
      }
+     .aboutme-contacme{
+         img{
+             width: 3em;
+         }
+     }
+     
      
  }
  /*components*/

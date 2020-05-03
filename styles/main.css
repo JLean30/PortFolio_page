@@ -107,6 +107,13 @@ header .header-wave .wave {
   margin-bottom: 1em;
 }
 
+.skills-section .skills-item button {
+  width: inherit;
+  background: unset !important;
+  border: 0;
+  padding: 0;
+}
+
 .skills-section .skills-item img {
   height: 103px;
   -o-object-fit: scale-down;
@@ -130,6 +137,11 @@ header .header-wave .wave {
 .aboutme-section .aboutme-image img {
   position: relative;
   z-index: 1;
+  width: 30em;
+}
+
+.aboutme-section .aboutme-contacme img {
+  width: 3em;
 }
 
 /*components*/
