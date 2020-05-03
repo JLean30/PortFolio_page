@@ -86,22 +86,15 @@ header .header-wave .wave {
   border: none !important;
 }
 
-@media (max-width: 576px) {
-  .works-section .card-deck .card {
-    width: 90vw;
-    height: 50vh;
-  }
-}
-
 .works-section .card-deck .card .card-img-top {
-  height: 71vh;
+  height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media (max-width: 576px) {
   .works-section .card-deck .card .card-img-top {
-    height: 39vh;
+    height: 16em;
   }
 }
 

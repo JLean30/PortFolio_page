@@ -83,14 +83,14 @@ body {
         .card{
             border: none !important;
             @media (max-width: $break-small) {
-                width: 90vw;
-                height: 50vh;
+                //width: 90vw;
+                //height: 50vh;
             }
             .card-img-top{
-                height: 71vh;
+                    height: 20em;
                  object-fit: cover;
                  @media (max-width: $break-small) {
-                    height: 39vh;
+                    height: 16em;
                 }
             }
 
