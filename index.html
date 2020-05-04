@@ -1,246 +1,342 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Jean Brenes - Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <title>Jean Brenes - Portfolio</title>
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="#works">Works</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="container-fluid">
+        <div class="row flex-wrap mt-5 pb-5">
+          <div
+            class="order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1"
+          >
+            <div class="portfolio-name">
+              <div>
+                <div class="d-sm-none position-absolute dot"></div>
+                <h1
+                  class="position-relative text-left p-3 p-md-0 mt-3 wow fadeIn"
+                >
+                  Hello! <br />
+                  I'm <span>Jean</span>
+                </h1>
+              </div>
 
-<body>
-  <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#works">Works</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#aboutme">About Me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <section class="container-fluid">
-      <div class="row flex-wrap  mt-5 pb-5">
-        <div class=" order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1 ">
-          <div class="portfolio-name ">
+              <p
+                class="col-12 col-md-8 col-lg-6 p-sm-3 p-md-0 mt-2 mt-md-5 text-left"
+              >
+                I develop interactive websites and apps that run across
+                plataforms & devices.
+              </p>
+              <div class="text-center text-md-left">
+                <a href="#" class="mt-4 btn btn-primary">Download CV</a>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 order-md-2 col-10 col-md-4 mx-auto">
             <div>
-              <div class="d-sm-none position-absolute dot"></div>
-              <h1 class="position-relative text-left p-3 p-md-0 mt-3 wow fadeIn">
-                Hello! <br />
-                I'm <span>Jean</span>
-              </h1>
+              <img
+                src="./assets/profile.png"
+                class="img-fluid box-orange"
+                alt="portrait image"
+              />
             </div>
-
-            <p class="col-12 col-md-8 col-lg-6 p-sm-3 p-md-0 mt-2 mt-md-5 text-left ">
-              I develop interactive websites and apps that
-              run across plataforms & devices.
-            </p>
-            <div class="text-center text-md-left">
-              <a href="#"><button class="mt-4 btn btn-primary ">Download CV</button></a>
-            </div>
-
           </div>
         </div>
-        <div class="order-1 order-md-2 col-10 col-md-4 mx-auto">
-          <div>
-            <img src="./assets/profile.png" class="img-fluid box-orange">
-          </div>
-        </div>
+      </section>
+
+      <div class="header-wave">
+        <div class="wave"></div>
       </div>
-    </section>
- 
-    <section class="header-wave">
-      <div class="wave"></div>
-    </section>
- 
-  </header>
-  <section class="container-fluid works-section " id="works">
-    <div class="mt-5">
-      <h2 class="text-center section-title">Works</h2>
-    <p class="col-10 col-md-8 col-lg-6 text-center mx-auto mt-4">These are a few works for clients that I’ve done and
-      they’re online.</p>
-    </div>
-    <div class="container-fluid cards-section mt-4 mx-auto pb-5">
-      <div class="row justify-content-center">
-        <div class="card-deck flex-wrap  ">
-          <div class="col-sm-12 col-md-6 col-lg-4 card-works  text-center">
-            <div class="col-sm-12 card wow fadeIn hvr-grow" data-wow-duration="1s">
-              <img class="card-img-top" src="./assets/barberia 1.png" alt="barberia clandestina project">
-              <div class="card-body">
-                <h5 class="card-title">Barberia Clandestina</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4  card-works ">
-            <div class="col-sm-12  card wow fadeIn hvr-grow" data-wow-duration="1s">
-              <img class="card-img-top" src="./assets/itm.png" alt="barberia clandestina project">
-              <div class="card-body">
-                <h5 class="card-title">ITM website</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 card-works">
-            <div class="col-sm-12  card wow fadeIn hvr-grow" data-wow-duration="1s">
-              <img class="card-img-top" src="./assets/gusticos.png" alt="barberia clandestina project">
-              <div class="card-body">
-                <h5 class="card-title">Gusticos Lomel Restaurant</h5>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <section class="container-fluid skills-section py-5" id="skills">
-    <h2 class="text-center section-title section-title--orange">Skills</h2>
-    <div class="container d-flex justify-content-lg-center col-sm-10 col-md-10  flex-wrap mt-5 pb-2">
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2  skills-item">
-        <button>
-          <img src="./assets/html.svg" alt="comapanies footer 1" class="w-100  p-2">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/css3-alt-brands.svg" alt="comapanies footer 1" class="w-100  ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/node-js-brands.svg" alt="comapanies footer 1" class="w-100  ">
-        </button>
-
-      </div>
-      <div class=" col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/laravel-brands.svg" alt="comapanies footer 1" class="w-100">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 mr-lg-3 skills-item">
-        <button>
-          <img src="./assets/linux-brands 1.svg" alt="comapanies footer 1" class="w-100  ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/js-brands.svg" alt="comapanies footer 1" class="w-100 ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/wordpress.svg" alt="comapanies footer 1" class="w-100 ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/react-brands.svg" alt="comapanies footer 1" class="w-100  ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/php-brands.svg" alt="comapanies footer 1" class="w-100 ">
-        </button>
-
-      </div>
-      <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
-        <button>
-          <img src="./assets/drupal-brands 1.svg" alt="comapanies footer 1" class="w-100 ">
-        </button>
-
-      </div>
-
-    </div>
-  </section>
-  <section class="container-fluid aboutme-section py-5" id="aboutme">
-    <div class="row flex-wrap mt-5 pb-5">
-      <div class="order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1 ">
-        <div class="portfolio-name "></div>
-        <div>
-          <h2 class="text-md-left text-center mt-4 wow fadeIn">
-            About Me
-          </h2>
-        </div>
-
-        <p class="col-12 col-md-6 col-lg-6 p-sm-4 p-md-0 mt-md-5 text-left px-5 ">
-          At the moment I'm studying Informatica y Tecnología multimedia at the Universidad de Costa Rica. I’ve been
-          dedicating my time to cybersecurity so I can improve the way I secure my websites and apps. I participated at
-          the program of the OAS Creating A Professional Career In Digital Security in 2019.
+    </header>
+    <section class="container-fluid works-section" id="works">
+      <div class="mt-5">
+        <h2 class="text-center section-title">Works</h2>
+        <p class="col-10 col-md-8 col-lg-6 text-center mx-auto mt-4">
+          These are a few works for clients that I’ve done and they’re online.
         </p>
-
-        <h3 class="text-left wow fadeIn mt-4">
-          Contact me
-        </h3>
-        <div class="d-flex flex-wrap aboutme-contacme">
-          <div class="col-10 mb-5 mt-4 p-0 mx-auto mx-md-0">
-            <a href="mailto:jlean30@protonmail.com" class="flex-row d-flex align-items-center text-white"><img
-                src="./assets/mail.svg" alt="mail icon" class="mr-3">
-              <p class="mb-0 mt-0">Jlean30@protonmail.com</p>
-            </a>
-          </div>
-
-          <div class="col-10 p-0 mx-auto mx-md-0">
-            <a href="tel:+50664411050" class="flex-row d-flex align-items-center text-white"><img
-                src="./assets/call-phone.svg" alt="phone icon" class="mr-3">
-              <p class="mb-0 mt-0" class="mb-0">(+506) - 6441-1050</p>
-            </a>
-          </div>
-
-        </div>
-
       </div>
-
-      <div class="order-1 order-md-2 col-10 col-md-4 mx-auto">
-        <div class="aboutme-image">
-          <img src="./assets/aboutme.png" class="img-fluid box-celestial">
-        </div>
-        <div class="aboutme-socialmedias">
-          <h3 class="text-left wow fadeIn mt-4">
-            Social Medias
-          </h3>
-          <div class="col-10 col-md-6 mx-auto mx-md-0 mt-4 d-flex justify-content-between p-0 ">
-            <a href="https://www.linkedin.com/in/jean-carlos-brenes-z%C3%BA%C3%B1iga-1bb07b184/"><img src="./assets/linkedin.svg" alt="linkedin icon"></a>
-            <a href="https://github.com/JLean30/"><img src="./assets/github.svg" alt="github icon"></a>
-            <a href="https://www.instagram.com/jlean30/"><img src="./assets/instagram.svg" alt="instagram icon"></a>
+      <div class="container-fluid cards-section mt-4 mx-auto pb-5">
+        <div class="row justify-content-center">
+          <div class="card-deck flex-wrap">
+            <div class="col-sm-12 col-md-6 col-lg-4 card-works text-center">
+              <div
+                class="col-sm-12 card wow fadeIn hvr-grow"
+                data-wow-duration="1s"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/barberia.png"
+                  alt="barberia clandestina project"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Barberia Clandestina</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 card-works">
+              <div
+                class="col-sm-12 card wow fadeIn hvr-grow"
+                data-wow-duration="1s"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/itm.png"
+                  alt="barberia clandestina project"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ITM website</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 card-works">
+              <div
+                class="col-sm-12 card wow fadeIn hvr-grow"
+                data-wow-duration="1s"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/gusticos.png"
+                  alt="barberia clandestina project"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gusticos Lomel Restaurant</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="copyrights"><p class="text-white text-center py-4">© Created By Jean Brenes All rights Reserved</p></section>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
-  <script>
+    <section class="container-fluid skills-section py-5" id="skills">
+      <h2 class="text-center section-title section-title--orange">Skills</h2>
+      <div
+        class="container d-flex justify-content-lg-center col-sm-10 col-md-10 flex-wrap mt-5 pb-2"
+      >
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/html.svg"
+              alt="html5 icon"
+              class="w-100 p-2"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/css3-alt-brands.svg"
+              alt="css3 icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/node-js-brands.svg"
+              alt="nodejs icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/laravel-brands.svg"
+              alt="laravel icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 mr-lg-3 skills-item">
+          <button>
+            <img
+              src="./assets/linux-brands.svg"
+              alt="linux icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/js-brands.svg"
+              alt="javascript icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/wordpress.svg"
+              alt="wordpress icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/react-brands.svg"
+              alt="react icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/php-brands.svg"
+              alt="php icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+          <button>
+            <img
+              src="./assets/drupal-brands.svg"
+              alt="drupal icon"
+              class="w-100"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="container-fluid aboutme-section py-5" id="aboutme">
+        <div class="row flex-wrap mt-5 pb-5">
+          <div
+            class="order-2 order-lg-0 col-12 col-md-12 col-lg-6 justify-content-md-start offset-md-1"
+          >
+            <h2 class="text-md-left p-3 p-lg-0 mt-4 wow fadeIn">
+              About Me
+            </h2>
 
-    new WOW().init();
-  </script>
-</body>
+            <p class="col-12 col-md-8 col-lg-8 p-sm-3 p-md-0 mt-md-5 text-left">
+              At the moment I'm studying Informatica y Tecnología multimedia at
+              the Universidad de Costa Rica. I’ve been dedicating my time to
+              cybersecurity so I can improve the way I secure my websites and
+              apps. I participated at the program of the OAS Creating A
+              Professional Career In Digital Security in 2019.
+            </p>
 
+            <h3 class="text-left wow fadeIn mt-4">
+              Contact me
+            </h3>
+            <div class="d-flex flex-wrap aboutme-contacme">
+              <div class="col-10 mb-5 mt-4 p-0 mx-auto mx-md-0">
+                <a
+                  href="mailto:jlean30@protonmail.com"
+                  class="flex-row d-flex align-items-center text-white"
+                  ><img src="./assets/mail.svg" alt="mail icon" class="mr-3" />
+                  <p class="mb-0 mt-0">Jlean30@protonmail.com</p>
+                </a>
+              </div>
+
+              <div class="col-10 p-0 mx-auto mx-md-0">
+                <a
+                  href="tel:+50664411050"
+                  class="flex-row d-flex align-items-center text-white"
+                  ><img
+                    src="./assets/call-phone.svg"
+                    alt="phone icon"
+                    class="mr-3"
+                  />
+                  <p class="mb-0 mt-0">(+506) - 6441-1050</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-md-10 col-lg-4 mx-auto">
+            <div class="order-1 order-lg-2 aboutme-image">
+              <img src="./assets/aboutme.png" class="img-fluid box-celestial" alt="Contacme image" />
+            </div>
+            <div class="aboutme-socialmedias">
+              <h3 class="d-none d-md-flex text-left wow fadeIn mt-4">
+                Social Medias
+              </h3>
+              <div
+                class="col-10 col-md-6 mx-auto mx-md-0 mt-4 d-flex justify-content-between p-0"
+              >
+                <a
+                  href="https://www.linkedin.com/in/jean-carlos-brenes-z%C3%BA%C3%B1iga-1bb07b184/"
+                  ><img src="./assets/linkedin.svg" alt="linkedin icon"
+                /></a>
+                <a href="https://github.com/JLean30/"
+                  ><img src="./assets/github.svg" alt="github icon"
+                /></a>
+                <a href="https://www.instagram.com/jlean30/"
+                  ><img src="./assets/instagram.svg" alt="instagram icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyrights">
+        <p class="text-white text-center py-4 mb-0">
+          © Created By Jean Brenes All rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>

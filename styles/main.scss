@@ -10,14 +10,11 @@ font-family: 'Playfair', sans-serif;
 /*reset bootstrapp*/
 html,
 body {
-  
+    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
  }
 
- section{
-    scroll-behavior: smooth; 
-    transition: all 1s ease-in-out;
- }
+ 
  header{
 
      background-color: $gray-brackground;
@@ -25,7 +22,9 @@ body {
         font-size: 5em;
         font-family: 'Playfair Display', serif;
         z-index: 1;
-
+        @media(max-width:$break-small){
+            font-size: 3em;
+        }
         span{
             color: $blue-primary;
             font-weight: bolder;
@@ -98,7 +97,7 @@ body {
                     object-position: top;
                  @media (max-width: $break-small) {
                      object-fit: cover;
-                    height: 16em;
+                     height: 11em;
                 }
             }
 
@@ -137,6 +136,9 @@ body {
      background-color: $dark-background;
      h2{
          font-size: 3.5em;
+         @media(max-width: $break-small){
+             font-size: 2.5em;
+         }
      }
 
      h3{
@@ -231,14 +233,3 @@ body {
     }
   }
 
-
-  .lines {
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#000;
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    svg { height:900px; }
-  }
