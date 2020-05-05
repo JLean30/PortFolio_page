@@ -91,30 +91,43 @@ body {
             flex-direction: row !important;
         }
 
-        
-        .card{
-            border: none !important;
-            padding: 0 !important;
-            @media(max-width:$break-medium){
-                box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-            }
-            .card-img-top{
-                    height: 20em;
-                    object-fit: cover;
-                    object-position: top;
-                 @media (max-width: $break-small) {
-            
-                     height: 11em;
+        .card-works{
+            a{
+                color: $dark-background;
+                &:hover{
+                    text-decoration-color: $light-blue;
                 }
-                @media (max-width: $break-medium) {
-         
-                    height: 23em;
-               }
+            }
+            .card{
+                border: none !important;
+                padding: 0 !important;
+
+                
+                @media(max-width:$break-medium){
+                    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+                }
+                .card-img-top{
+                        height: 20em;
+                        object-fit: cover;
+                        object-position: top;
+                        transition: all .3s ease-out;
+                        &:hover{
+                            height: 25em;
+                            
+                        }
+                     @media (max-width: $break-small) {
+                
+                         height: 11em;
+                    }
+                    @media (max-width: $break-medium) {
+             
+                        height: 23em;
+                   }
+                }
             }
 
-            
-            
         }
+        
     }
     
  }
@@ -128,6 +141,7 @@ body {
      .skills-item {
          margin-bottom: 1em;
          button{
+             cursor: unset;
              width: inherit;
              background: unset !important;
              border: 0;
@@ -153,7 +167,7 @@ body {
      }
 
      h3{
-         color: $celestial;
+         color: $light-blue;
      }
      .aboutme-image{
          img{
@@ -176,7 +190,7 @@ body {
     height: 13em;
     width: 13em;
     left: -23px;
-    background-color: $celestial;
+    background-color: $light-blue;
     opacity: 0.4;
     border-radius: 50%;
     z-index: 0;
@@ -185,6 +199,12 @@ body {
 
     }
     
+  }
+
+  .item-hover{
+    &:hover{
+        opacity: 0.8;
+    }
   }
   /*
   .rect{
@@ -207,8 +227,8 @@ body {
     box-shadow: 20px -14px 0px 0px $orange;
         
 }
-.box-celestial{
-    box-shadow: -20px -14px 0px 0px $celestial;
+.box-light-blue{
+    box-shadow: -20px -14px 0px 0px $light-blue;
 }
 
   .section-title{

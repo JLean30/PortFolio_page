@@ -16,10 +16,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cgiloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -53,7 +49,7 @@
           </ul>
         </div>
       </nav>
-      <section class="container-fluid">
+      <section class="container-fluid wow fadeIn">
         <div class="row flex-wrap mt-5 pb-5">
           <div
             class="order-2 order-md-1 col-12 col-md-6 justify-content-md-start offset-md-1"
@@ -62,7 +58,7 @@
               <div>
                 <div class="d-sm-none position-absolute dot"></div>
                 <h1
-                  class="position-relative text-left p-3 p-md-0 mt-3 wow fadeIn"
+                  class="position-relative text-left p-3 p-md-0 mt-3 "
                 >
                   Hello! <br />
                   I'm <span>Jean</span>
@@ -105,68 +101,73 @@
       </div>
       <div class="container-fluid cards-section mt-5 mx-auto pb-5">
         <div class="row justify-content-center">
-          <div class="card-deck flex-wrap ">
-            <div class="col-sm-12 col-md-6 col-lg-4 card-works">
-              <div
-                class="col-sm-12 card m-0 mb-4   wow fadeIn hvr-grow"
-                data-wow-duration="1s"
-              >
-                <img
-                  class="card-img-top"
-                  src="./assets/barberia.png"
-                  alt="barberia clandestina project"
-                />
-                <div class="card-body p-0 pt-3">
-                  <h5 class="card-title">Barberia Clandestina</h5>
+          <div class="card-deck flex-wrap">
+            <div class="col-sm-12 col-md-6 col-lg-4 card-works wow fadeIn" data-wow-duration="1s">
+              <a href="https://barberiaclandestina.com">
+                <div
+                  class="col-sm-12 card m-0 mb-4 "
+                  
+                >
+                  <img
+                    class="card-img-top"
+                    src="./assets/barberia.png"
+                    alt="barberia clandestina project"
+                  />
+                  <div class="card-body p-3 pt-3 text-center">
+                    <h5 class="card-title">Barberia Clandestina</h5>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 card-works">
-              <div
-                class="col-sm-12 card m-0 mb-4  shadow-lg-none wow fadeIn hvr-grow"
-                data-wow-duration="1s"
-              >
-                <img
-                  class="card-img-top"
-                  src="./assets/itm.png"
-                  alt="barberia clandestina project"
-                />
-                <div class="card-body p-0 pt-3">
-                  <h5 class="card-title">ITM website</h5>
-                </div>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 card-works wow fadeIn" data-wow-duration="1s">
+                <a href="http://18.189.146.142/">
+                  <div
+                    class="col-sm-12 card m-0 mb-4 shadow-lg-none "
+                    data-wow-duration="1s"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="./assets/itm.png"
+                      alt="Itm website project"
+                    />
+                    <div class="card-body p-3 pt-3 text-center">
+                      <h5 class="card-title">ITM Website</h5>
+                    </div>
+                  </div>
+                </a>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 card-works">
-              <div
-                class="col-sm-12 card m-0 mb-4  shadow-lg-none wow fadeIn hvr-grow"
-                data-wow-duration="1s"
-              >
-                <img
-                  class="card-img-top"
-                  src="./assets/gusticos.png"
-                  alt="barberia clandestina project"
-                />
-                <div class="card-body p-0 pt-3">
-                  <h5 class="card-title">Gusticos Lomel Restaurant</h5>
-                </div>
-              </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 card-works wow fadeIn" data-wow-duration="1s">
+                <a href="https://gusticoslomel.com">
+                  <div
+                    class="col-sm-12 card m-0 mb-4 shadow-lg-none  "
+                    
+                  >
+                    <img
+                      class="card-img-top"
+                      src="./assets/gusticos.png"
+                      alt="barberia clandestina project"
+                    />
+                    <div class="card-body p-3 pt-3 text-center">
+                      <h5 class="card-title">Gusticos Lomel Restaurant</h5>
+                    </div>
+                  </div>
+                </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="container-fluid skills-section py-5" id="skills">
+    <section class="container-fluid skills-section py-5 wow slideInUp" id="skills">
       <h2 class="text-center section-title section-title--orange">Skills</h2>
       <div
         class="container d-flex justify-content-lg-center col-sm-10 col-md-10 flex-wrap mt-5 pb-2"
       >
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img src="./assets/html.svg" alt="html5 icon" class="w-100 p-2" />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/css3-alt-brands.svg"
@@ -175,7 +176,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/node-js-brands.svg"
@@ -184,7 +185,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/laravel-brands.svg"
@@ -193,7 +194,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 mr-lg-3 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 mr-lg-3 skills-item item-hover">
           <button>
             <img
               src="./assets/linux-brands.svg"
@@ -202,7 +203,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/js-brands.svg"
@@ -211,7 +212,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/wordpress.svg"
@@ -220,7 +221,7 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/react-brands.svg"
@@ -229,12 +230,12 @@
             />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img src="./assets/php-brands.svg" alt="php icon" class="w-100" />
           </button>
         </div>
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2 skills-item item-hover">
           <button>
             <img
               src="./assets/drupal-brands.svg"
@@ -256,7 +257,7 @@
             </h2>
 
             <p class="col-12 col-md-8 col-lg-8 p-sm-3 p-md-0 mt-md-5 text-left">
-              At the moment I'm studying Informatica y Tecnología multimedia at
+              I'm studying Informatica y Tecnología multimedia at
               the Universidad de Costa Rica. I’ve been dedicating my time to
               cybersecurity so I can improve the way I secure my websites and
               apps. I participated at the program of the OAS Creating A
@@ -267,7 +268,7 @@
               Contact me
             </h3>
             <div class="d-flex flex-wrap aboutme-contacme">
-              <div class="col-10 mb-5 mt-4 p-3 p-lg-0 ">
+              <div class="col-10 mb-5 mt-4 p-3 p-lg-0">
                 <a
                   href="mailto:jlean30@protonmail.com"
                   class="flex-row d-flex align-items-center text-white"
@@ -295,7 +296,7 @@
             <div class="order-1 order-lg-2 aboutme-image">
               <img
                 src="./assets/aboutme.png"
-                class="img-fluid box-celestial"
+                class="img-fluid box-light-blue"
                 alt="Contacme image"
               />
             </div>
@@ -308,13 +309,13 @@
               >
                 <a
                   href="https://www.linkedin.com/in/jean-carlos-brenes-z%C3%BA%C3%B1iga-1bb07b184/"
-                  ><img src="./assets/linkedin.svg" alt="linkedin icon"
+                  class="item-hover"><img src="./assets/linkedin.svg" alt="linkedin icon"
                 /></a>
                 <a href="https://github.com/JLean30/"
-                  ><img src="./assets/github.svg" alt="github icon"
+                  class="item-hover"><img src="./assets/github.svg" alt="github icon"
                 /></a>
                 <a href="https://www.instagram.com/jlean30/"
-                  ><img src="./assets/instagram.svg" alt="instagram icon"
+                  class="item-hover"><img src="./assets/instagram.svg" alt="instagram icon"
                 /></a>
               </div>
             </div>
