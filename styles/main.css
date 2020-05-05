@@ -51,6 +51,12 @@ header .btn {
   padding: 0.5em 5em;
   background-color: #016481 !important;
   border-color: unset !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+header .btn:hover {
+  background-color: #044357 !important;
 }
 
 header .header-wave {

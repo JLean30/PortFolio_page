@@ -45,6 +45,10 @@ body {
         padding: 0.5em 5em;
         background-color: $blue-primary !important;
         border-color: unset !important;
+        transition: all .2s linear;
+        &:hover{
+            background-color: $blue-hover !important;
+        }
     }
 
     .header-wave{
@@ -263,4 +267,5 @@ body {
         background-position-x: 1000px;
     }
   }
+
 
