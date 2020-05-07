@@ -12,46 +12,51 @@ html,
 body {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
- }
+}
 
- 
- header{
 
-     background-color: $gray-brackground;
-    h1{
+header {
+
+    background-color: $gray-brackground;
+
+    h1 {
         font-size: 5em;
         font-family: 'Playfair Display', serif;
         z-index: 1;
-        @media(max-width:$break-small){
+
+        @media(max-width:$break-small) {
             font-size: 3em;
         }
-        span{
+
+        span {
             color: $blue-primary;
             font-weight: bolder;
         }
 
-       
+
     }
 
-    p{
+    p {
         font-size: 1.56em;
-        @media(max-width: $break-small){
+
+        @media(max-width: $break-small) {
             font-size: 1.3em;
         }
     }
 
-    .btn{
+    .btn {
         border-radius: 2rem;
         padding: 0.5em 5em;
         background-color: $blue-primary !important;
         border-color: unset !important;
         transition: all .2s linear;
-        &:hover{
+
+        &:hover {
             background-color: $blue-hover !important;
         }
     }
 
-    .header-wave{
+    .header-wave {
         margin: 0;
         padding: 0;
         position: relative;
@@ -60,7 +65,7 @@ body {
         bottom: 0;
         overflow: hidden;
 
-        .wave{
+        .wave {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -69,128 +74,144 @@ body {
             background: url('../assets/wave.png');
             background-size: 1000px 100px;
             animation: wave-animation 15s linear infinite;
-            @media(max-width: $break-small){
+
+            @media(max-width: $break-small) {
                 animation-duration: 8s;
             }
         }
     }
-     
- }
 
- /*works section*/
+}
 
- .works-section{
+/*works section*/
 
-    h2{
+.works-section {
+
+    h2 {
         font-size: 2.5em;
         font-weight: bold;
     }
 
-    .card-deck{
-        
-        @media (max-width: $break-small){
-            flex-direction: row !important;
-        }
-        @media (max-width: $break-medium){
+    .card-deck {
+
+        @media (max-width: $break-small) {
             flex-direction: row !important;
         }
 
-        .card-works{
-            a{
+        @media (max-width: $break-medium) {
+            flex-direction: row !important;
+        }
+
+        .card-works {
+            a {
                 color: $dark-background;
-                &:hover{
+
+                &:hover {
                     text-decoration-color: $light-blue;
                 }
             }
-            .card{
+
+            .card {
                 border: none !important;
                 padding: 0 !important;
 
-                
-                @media(max-width:$break-medium){
-                    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+                @media(max-width:$break-medium) {
+                    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
                 }
-                .card-img-top{
-                        height: 20em;
-                        object-fit: cover;
-                        object-position: top;
-                        transition: all .3s ease-out;
-                        &:hover{
-                            height: 25em;
-                            
-                        }
-                     @media (max-width: $break-small) {
-                
-                         height: 11em;
+
+                .card-img-top {
+                    height: 20em;
+                    object-fit: cover;
+                    object-position: top;
+                    transition: all .3s ease-out;
+
+                    &:hover {
+                        height: 25em;
+                        opacity: 0.8;
+
                     }
+
+                    @media (max-width: $break-small) {
+
+                        height: 11em;
+                    }
+
                     @media (max-width: $break-medium) {
-             
+
                         height: 23em;
-                   }
+                    }
                 }
             }
 
         }
-        
+
     }
-    
- }
 
- /*Skills section*/
- 
- .skills-section{
-     background-color: $gray-section;
-    
+}
 
-     .skills-item {
-         margin-bottom: 1em;
-         button{
-             cursor: unset;
-             width: inherit;
-             background: unset !important;
-             border: 0;
-             padding: 0;
-         }
-        img{
+/*Skills section*/
+
+.skills-section {
+    background-color: $gray-section;
+
+
+    .skills-item {
+        margin-bottom: 1em;
+
+        button {
+            cursor: unset;
+            width: inherit;
+            background: unset !important;
+            border: 0;
+            padding: 0;
+        }
+
+        img {
             height: 103px;
             object-fit: scale-down;
         }
-       
+
     }
- }
+}
 
- /*About me Section*/
- .aboutme-section{
+/*About me Section*/
+.aboutme-section {
     color: white;
-     background-color: $dark-background;
-     h2{
-         font-size: 3.5em;
-         @media(max-width: $break-small){
-             font-size: 2.5em;
-         }
-     }
+    background-color: $dark-background;
 
-     h3{
-         color: $light-blue;
-     }
-     .aboutme-image{
-         img{
-             position: relative;
-             z-index: 1;
-             width: 30em;
-         }
-     }
-     .aboutme-contacme{
-         img{
-             width: 3em;
-         }
-     }
-     
-     
- }
- /*components*/
+    h2 {
+        font-size: 3.5em;
 
- .dot {
+        @media(max-width: $break-small) {
+            font-size: 2.5em;
+        }
+    }
+
+    h3 {
+        color: $light-blue;
+    }
+
+    .aboutme-image {
+        img {
+            position: relative;
+            z-index: 1;
+            width: 30em;
+        }
+    }
+
+    .aboutme-contacme {
+        img {
+            width: 3em;
+        }
+    }
+
+
+}
+
+/*components*/
+
+.dot {
     height: 13em;
     width: 13em;
     left: -23px;
@@ -198,19 +219,21 @@ body {
     opacity: 0.4;
     border-radius: 50%;
     z-index: 0;
-    @media (max-width: $break-small){
+
+    @media (max-width: $break-small) {
         display: none;
 
     }
-    
-  }
 
-  .item-hover{
-    &:hover{
+}
+
+.item-hover {
+    &:hover {
         opacity: 0.8;
     }
-  }
-  /*
+}
+
+/*
   .rect{
     background-color: $orange;
     width: 19vw;
@@ -227,17 +250,18 @@ body {
     }
 
 }*/
-.box-orange{
+.box-orange {
     box-shadow: 20px -14px 0px 0px $orange;
-        
+
 }
-.box-light-blue{
+
+.box-light-blue {
     box-shadow: -20px -14px 0px 0px $light-blue;
 }
 
-  .section-title{
+.section-title {
 
-    &::before{
+    &::before {
         content: "";
         display: block;
         width: 2em;
@@ -246,26 +270,27 @@ body {
         border-radius: .5rem;
         margin: 0 auto .4em;
     }
-    
-  }
-  .section-title--orange{
-      &::before{
-          background-color: $orange;
-      }
-  }
 
-.copyrights{
+}
+
+.section-title--orange {
+    &::before {
+        background-color: $orange;
+    }
+}
+
+.copyrights {
     background-color: $dark-copyright;
 }
-  /*animateions */
 
-  @keyframes wave-animation{
-    0%{
+/*animateions */
+
+@keyframes wave-animation {
+    0% {
         background-position-x: 0;
     }
-    100%{
+
+    100% {
         background-position-x: 1000px;
     }
-  }
-
-
+}

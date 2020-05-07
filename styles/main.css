@@ -145,6 +145,7 @@ header .header-wave .wave {
 
 .works-section .card-deck .card-works .card .card-img-top:hover {
   height: 25em;
+  opacity: 0.8;
 }
 
 @media (max-width: 576px) {
