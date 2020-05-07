@@ -279,6 +279,10 @@ header .header-wave .wave {
   background-color: #525252;
 }
 
+.copyrights img {
+  width: 2em;
+}
+
 /*animateions */
 @-webkit-keyframes wave-animation {
   0% {
