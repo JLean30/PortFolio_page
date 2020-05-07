@@ -11,13 +11,8 @@ font-family: 'Playfair', sans-serif;
 /*reset bootstrapp*/
 html,
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-section {
   scroll-behavior: smooth;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -28,6 +23,12 @@ header h1 {
   font-size: 5em;
   font-family: 'Playfair Display', serif;
   z-index: 1;
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 3em;
+  }
 }
 
 header h1 span {
@@ -50,6 +51,12 @@ header .btn {
   padding: 0.5em 5em;
   background-color: #016481 !important;
   border-color: unset !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+header .btn:hover {
+  background-color: #044357 !important;
 }
 
 header .header-wave {
@@ -74,6 +81,13 @@ header .header-wave .wave {
           animation: wave-animation 15s linear infinite;
 }
 
+@media (max-width: 576px) {
+  header .header-wave .wave {
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+  }
+}
+
 /*works section*/
 .works-section h2 {
   font-size: 2.5em;
@@ -89,23 +103,59 @@ header .header-wave .wave {
   }
 }
 
-.works-section .card-deck .card {
-  border: none !important;
+@media (max-width: 768px) {
+  .works-section .card-deck {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
 }
 
-.works-section .card-deck .card .card-img-top {
+.works-section .card-deck .card-works a {
+  color: #423E3F;
+}
+
+.works-section .card-deck .card-works a:hover {
+  -webkit-text-decoration-color: #36D9C8;
+          text-decoration-color: #36D9C8;
+}
+
+.works-section .card-deck .card-works .card {
+  border: none !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .works-section .card-deck .card-works .card {
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+}
+
+.works-section .card-deck .card-works .card .card-img-top {
   height: 20em;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.works-section .card-deck .card-works .card .card-img-top:hover {
+  height: 25em;
 }
 
 @media (max-width: 576px) {
-  .works-section .card-deck .card .card-img-top {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 16em;
+  .works-section .card-deck .card-works .card .card-img-top {
+    height: 11em;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-section .card-deck .card-works .card .card-img-top {
+    height: 23em;
   }
 }
 
@@ -119,6 +169,7 @@ header .header-wave .wave {
 }
 
 .skills-section .skills-item button {
+  cursor: unset;
   width: inherit;
   background: unset !important;
   border: 0;
@@ -139,6 +190,12 @@ header .header-wave .wave {
 
 .aboutme-section h2 {
   font-size: 3.5em;
+}
+
+@media (max-width: 576px) {
+  .aboutme-section h2 {
+    font-size: 2.5em;
+  }
 }
 
 .aboutme-section h3 {
@@ -172,6 +229,10 @@ header .header-wave .wave {
   }
 }
 
+.item-hover:hover {
+  opacity: 0.8;
+}
+
 /*
   .rect{
     background-color: $orange;
@@ -194,7 +255,7 @@ header .header-wave .wave {
           box-shadow: 20px -14px 0px 0px #FD8052;
 }
 
-.box-celestial {
+.box-light-blue {
   -webkit-box-shadow: -20px -14px 0px 0px #36D9C8;
           box-shadow: -20px -14px 0px 0px #36D9C8;
 }
@@ -232,19 +293,6 @@ header .header-wave .wave {
   }
   100% {
     background-position-x: 1000px;
-  }
-}
-
-.lines {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #000;
-}
-
-@media only screen and (max-width: 1200px) {
-  svg {
-    height: 900px;
   }
 }
 /*# sourceMappingURL=main.css.map */
