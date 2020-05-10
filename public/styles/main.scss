@@ -1,3 +1,8 @@
+/*
+@author Jean Brenes
+@version 1.0
+@copyright Jean Brenes
+*/
 /*fonts
 font-family: 'Roboto ', sans-serif;
 font-family: 'Playfair', sans-serif;
@@ -15,6 +20,39 @@ body {
 
 header {
   background-color: $gray-brackground;
+
+  .nav-item {
+    .nav-link {
+      color: $dark-background !important;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+  }
+
+  .nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $orange;
+    transition: width .3s;
+  }
+
+  .nav-item:hover::after {
+    width: 80%;
+
+    @media(max-width: $break-small) {
+      width: 15%;
+    }
+
+    @media(max-width: $break-medium) {
+      width: 15%;
+    }
+  }
 
   h1 {
     font-size: 5em;
@@ -45,6 +83,7 @@ header {
     background-color: $blue-primary !important;
     border-color: unset !important;
     transition: all 0.2s linear;
+
     &:hover {
       background-color: $blue-hover !important;
     }
@@ -68,6 +107,7 @@ header {
       background: url("../assets/wave.png");
       background-size: 1000px 100px;
       animation: wave-animation 15s linear infinite;
+
       @media (max-width: $break-small) {
         animation-duration: 8s;
       }
@@ -76,13 +116,11 @@ header {
 }
 
 /*works section*/
-
 .works-section {
   h2 {
     font-size: 2.5em;
     font-weight: bold;
   }
-
   .card-deck {
     @media (max-width: $break-small) {
       flex-direction: row !important;
@@ -91,39 +129,31 @@ header {
     @media (max-width: $break-medium) {
       flex-direction: row !important;
     }
-
     .card-works {
       a {
         color: $dark-background;
-
         &:hover {
           text-decoration-color: $light-blue;
         }
       }
-
       .card {
         border: none !important;
         padding: 0 !important;
-
         @media (max-width: $break-medium) {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
         }
-
         .card-img-top {
           height: 20em;
           object-fit: cover;
           object-position: top;
           transition: all 0.3s ease-out;
-
           &:hover {
             height: 25em;
             opacity: 0.8;
           }
-
           @media (max-width: $break-small) {
             height: 11em;
           }
-
           @media (max-width: $break-medium) {
             height: 23em;
           }
@@ -131,7 +161,6 @@ header {
       }
     }
   }
-
   .btn-repo {
     background-color: transparent;
     color: $blue-primary;
@@ -150,19 +179,23 @@ header {
       background-position: center;
       transition: all 0.3s ease 0s;
     }
+
     &:hover {
       background-color: $blue-primary;
       color: white;
     }
+
     &:active {
       background-color: $blue-primary !important;
       border-color: $blue-primary !important;
     }
   }
-  .btn-repo:hover > .github-icon {
+
+  .btn-repo:hover>.github-icon {
     background-image: url("../assets/github.svg");
   }
-  .btn-repo:active > .github-icon {
+
+  .btn-repo:active>.github-icon {
     background-image: url("../assets/github.svg");
   }
 }

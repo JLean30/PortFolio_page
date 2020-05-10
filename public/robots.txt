@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jeanbrenes.com/sitemap/sitemap.xml
