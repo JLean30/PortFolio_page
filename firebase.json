@@ -9,6 +9,14 @@
       {
         "source": "/español",
         "destination": "/index-es.html"
+      },
+      {
+        "source": "/cv",
+        "destination": "/documents/jeanbrenescv.pdf"
+      },
+      {
+        "source": "/cv-español",
+        "destination": "/documents/jeanbrenescv-es.pdf"
       }
     ],
     "ignore": [
