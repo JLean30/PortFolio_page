@@ -12,7 +12,7 @@ font-family: 'Playfair', sans-serif;
 html,
 body {
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 
 header h1 {
   font-size: 5em;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   z-index: 1;
 }
 
@@ -51,8 +51,8 @@ header .btn {
   padding: 0.5em 5em;
   background-color: #016481 !important;
   border-color: unset !important;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 header .btn:hover {
@@ -139,8 +139,8 @@ header .header-wave .wave {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .works-section .card-deck .card-works .card .card-img-top:hover {
@@ -158,6 +158,46 @@ header .header-wave .wave {
   .works-section .card-deck .card-works .card .card-img-top {
     height: 23em;
   }
+}
+
+.works-section .btn-repo {
+  background-color: transparent;
+  color: #016481;
+  padding: 0.6em 2em;
+  border-radius: 2em;
+  font-weight: 600;
+  border: 4px solid;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.works-section .btn-repo .github-icon {
+  background-image: url(../assets/github-blue.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  background-size: contain;
+  height: 31px;
+  background-position: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.works-section .btn-repo:hover {
+  background-color: #016481;
+  color: white;
+}
+
+.works-section .btn-repo:active {
+  background-color: #016481 !important;
+  border-color: #016481 !important;
+}
+
+.works-section .btn-repo:hover > .github-icon {
+  background-image: url("../assets/github.svg");
+}
+
+.works-section .btn-repo:active > .github-icon {
+  background-image: url("../assets/github.svg");
 }
 
 /*Skills section*/
@@ -214,43 +254,10 @@ header .header-wave .wave {
 }
 
 /*components*/
-.dot {
-  height: 13em;
-  width: 13em;
-  left: -23px;
-  background-color: #36D9C8;
-  opacity: 0.4;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-@media (max-width: 576px) {
-  .dot {
-    display: none;
-  }
-}
-
 .item-hover:hover {
   opacity: 0.8;
 }
 
-/*
-  .rect{
-    background-color: $orange;
-    width: 19vw;
-    top: -14px;
-    right: -7px;
-    height: 54vh;
-    z-index: 0;
-    @media(max-width: $break-small){
-      
-            width: 51vw;
-            right: 1px;
-            height: 47vh;
-  
-    }
-
-}*/
 .box-orange {
   -webkit-box-shadow: 20px -14px 0px 0px #FD8052;
           box-shadow: 20px -14px 0px 0px #FD8052;
@@ -267,8 +274,8 @@ header .header-wave .wave {
   width: 2em;
   background-color: #016481;
   height: 4px;
-  border-radius: .5rem;
-  margin: 0 auto .4em;
+  border-radius: 0.5rem;
+  margin: 0 auto 0.4em;
 }
 
 .section-title--orange::before {
