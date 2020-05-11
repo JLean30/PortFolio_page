@@ -6,22 +6,22 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://jeanbrenes.com/</loc>
-  <lastmod>2020-05-10T01:03:11+00:00</lastmod>
+  <lastmod>2020-05-11T01:03:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jeanbrenes.com/index-es.html</loc>
-  <lastmod>2020-05-10T01:03:11+00:00</lastmod>
+  <loc>https://jeanbrenes.com/español</loc>
+  <lastmod>2020-05-11T01:03:11+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://jeanbrenes.com/documents/jeanbrenescv.pdf</loc>
-  <lastmod>2020-05-09T01:03:11+00:00</lastmod>
+  <loc>https://jeanbrenes.com/cv</loc>
+  <lastmod>2020-05-11T01:03:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jeanbrenes.com/documents/jeanbrenescv-es.pdf</loc>
-  <lastmod>2020-05-10T01:03:11+00:00</lastmod>
+  <loc>https://jeanbrenes.com/cv-español</loc>
+  <lastmod>2020-05-11T01:03:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
